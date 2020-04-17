@@ -22,5 +22,13 @@ module.exports = {
   plugins: ['react', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'react/prop-types': 0,
+    'react/react-in-jsx-scope': 0,
+    camelcase: 0,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 }
