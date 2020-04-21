@@ -18,10 +18,6 @@ const App = () => {
         <title>Karmatek</title>
         <meta name="Description" content="Karmatek" />
         <meta name="theme-color" content="#ec5555" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
-          rel="stylesheet"
-        />
       </Head>
       <Banner />
       <BannerSlider />

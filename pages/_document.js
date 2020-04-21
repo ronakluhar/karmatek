@@ -34,6 +34,10 @@ export default class CustomDocument extends Document {
       <html lang="en">
         <Head>
           <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
+          <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
