@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Modal } from '@redq/reuse-modal'
 import '@redq/reuse-modal/es/index.css'
 
-export default ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <Fragment>
       <Modal />
@@ -10,3 +10,5 @@ export default ({ Component, pageProps }) => {
     </Fragment>
   )
 }
+
+export default App

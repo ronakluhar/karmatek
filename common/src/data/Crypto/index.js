@@ -19,11 +19,6 @@ import BETA3 from '../../assets/image/crypto/beta-3.svg'
 
 export const MENU_ITEMS = [
   {
-    label: 'Home',
-    path: '#banner_section',
-    offset: '0',
-  },
-  {
     label: 'Feature',
     path: '#trusted',
     offset: '0',
@@ -189,7 +184,7 @@ export const menuWidget = [
       },
       {
         id: 3,
-        url: '#',
+        url: '/about',
         text: 'About Us',
       },
       {

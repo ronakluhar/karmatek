@@ -5,8 +5,12 @@ const withOptimizedImages = require('next-optimized-images')
 const withFonts = require('next-fonts')
 
 module.exports = withPlugins([withOptimizedImages, withFonts, withCSS], {
-  webpack(config, options) {
+  webpack(config) {
     config.resolve.modules.push(path.resolve('./'))
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
 
     return config
   },

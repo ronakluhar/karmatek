@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { themeGet } from 'styled-system'
 import BannerBG from 'common/src/assets/image/crypto/main_bg.svg'
 
 const BannerWrapper = styled.section`
