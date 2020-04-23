@@ -9,7 +9,7 @@ const Banner = ({ row, col, title }) => {
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-            <BannerHeading>Who we are</BannerHeading>
+            <BannerHeading>{title}</BannerHeading>
           </Box>
         </Box>
       </Container>

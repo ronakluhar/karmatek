@@ -6,10 +6,12 @@ import Navbar from '../containers/Crypto/Navbar'
 import { cryptoTheme } from 'common/src/theme/crypto'
 import { ResetCSS } from 'common/src/assets/css/style'
 import { GlobalStyle, ContentWrapper } from '../containers/Crypto/crypto.style'
+import { SEO } from 'containers'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, customSEO }) => {
   return (
     <ThemeProvider theme={cryptoTheme}>
+      {!customSEO && <SEO />}
       <ResetCSS />
       <GlobalStyle />
       <ContentWrapper>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from 'next/head'
 import Banner from 'containers/Crypto/BannerSection'
 import BannerSlider from 'containers/Crypto/BannerSlider'
 import Transactions from 'containers/Crypto/Transaction'
@@ -14,11 +13,6 @@ import Layout from 'containers/Layout'
 const App = () => {
   return (
     <Layout>
-      <Head>
-        <title>Karmatek</title>
-        <meta name="Description" content="Karmatek" />
-        <meta name="theme-color" content="#ec5555" />
-      </Head>
       <Banner />
       <BannerSlider />
       <Transactions />

@@ -1,7 +1,8 @@
 ---
-author: Teseting
+author: Karmatek
 date: '2019-07-10T07:00:00.000Z'
 title: 'Lorem Ipsum'
+image: 'd1b03902e55e446f818891529345c234.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fermentum ipsum ac viverra tincidunt. Duis cursus lectus ut mauris convallis finibus. Morbi porta placerat finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse dictum lectus sed ex tempor, eu ultrices nunc porttitor. Nullam vitae hendrerit magna. Duis tempor semper sapien. Morbi maximus ut leo sed accumsan. Morbi efficitur blandit varius.

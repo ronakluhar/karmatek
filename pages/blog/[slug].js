@@ -7,7 +7,6 @@ import Container from 'common/src/components/UI/Container'
 import Head from 'next/head'
 import Footer from 'containers/Crypto/Footer'
 import BetaSections from 'containers/Crypto/BetaSection'
-const glob = require('glob')
 
 const BlogTemplate = ({ data, content }) => {
   function reformatDate(fullDate) {
