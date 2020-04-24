@@ -15,6 +15,7 @@
     "@reach/accordion": "^0.9.1",
     "@redq/reuse-modal": "^1.1.9",
     "@zeit/next-css": "^1.0.1",
+    "disqus-react": "^1.0.8",
     "firebase-admin": "^8.9.2",
     "firebase-functions": "^3.3.0",
     "gray-matter": "^4.0.2",

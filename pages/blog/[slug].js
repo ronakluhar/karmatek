@@ -7,6 +7,8 @@ import Container from 'common/src/components/UI/Container'
 import Head from 'next/head'
 import Footer from 'containers/Crypto/Footer'
 import BetaSections from 'containers/Crypto/BetaSection'
+import { DiscussionEmbed } from 'disqus-react'
+import Router from 'next/router'
 
 const BlogTemplate = ({ data, content }) => {
   function reformatDate(fullDate) {
@@ -28,6 +30,14 @@ const BlogTemplate = ({ data, content }) => {
       />
       <Container>
         <ReactMarkdown source={content} />
+        <DiscussionEmbed
+          shortname="test"
+          config={{
+            url: `/blog/${Router.query.slug}`,
+            identifier: frontmatter.title,
+            title: frontmatter.title,
+          }}
+        />
       </Container>
       <BetaSections />
       <Footer />
