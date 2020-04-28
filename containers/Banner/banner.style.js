@@ -7,8 +7,8 @@ export const BannerWrapper = styled.section`
     linear-gradient(35deg, rgb(116, 107, 253) 0%, rgb(110, 106, 252) 100%);
   background-size: cover;
   background-position: top center;
-  @media (max-width: 575px) {
-    padding: 120px 0 0 0;
+  @media (max-width: 768px) {
+    padding: 8rem 0 1.5rem 0;
   }
 
   img {

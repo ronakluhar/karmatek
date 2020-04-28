@@ -4,6 +4,7 @@ import Scrollspy from 'react-scrollspy'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { DrawerContext } from '../../contexts/DrawerContext'
+import Link from 'next/link'
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   const { dispatch } = useContext(DrawerContext)
@@ -60,6 +61,16 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           )}
         </li>
       ))}
+      <li>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/blog">
+          <a>Blog</a>
+        </Link>
+      </li>
     </Scrollspy>
   )
 }

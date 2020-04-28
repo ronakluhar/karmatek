@@ -35,7 +35,7 @@ export const MENU_ITEMS = [
     offset: '-10',
   },
   {
-    label: 'Contact Us',
+    label: 'Contact',
     path: '#footerSection',
     offset: '380',
   },
