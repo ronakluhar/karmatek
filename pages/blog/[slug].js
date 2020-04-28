@@ -8,7 +8,7 @@ import Head from 'next/head'
 import Footer from 'containers/Crypto/Footer'
 import BetaSections from 'containers/Crypto/BetaSection'
 import { DiscussionEmbed } from 'disqus-react'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 
 const BlogTemplate = ({ data, content }) => {
   function reformatDate(fullDate) {
@@ -16,6 +16,7 @@ const BlogTemplate = ({ data, content }) => {
     return date.toDateString().slice(4)
   }
   const frontmatter = data
+  const route = useRouter()
 
   if (!frontmatter) return <></>
   return (
@@ -31,10 +32,10 @@ const BlogTemplate = ({ data, content }) => {
       <Container>
         <ReactMarkdown source={content} />
         <DiscussionEmbed
-          shortname="test"
+          shortname="karmatek-io"
           config={{
-            url: `/blog/${Router.query.slug}`,
-            identifier: frontmatter.title,
+            url: `/blog/${route.query.slug}`,
+            identifier: route.query.slug,
             title: frontmatter.title,
           }}
         />
